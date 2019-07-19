@@ -9,3 +9,4 @@
 .vagrant/machines/default/virtualbox/synced_folders
 .vagrant/machines/default/virtualbox/vagrant_cwd
 .vagrant/rgloader/loader.rb
+python/.DS_Store
