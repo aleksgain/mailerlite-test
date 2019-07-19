@@ -8,6 +8,12 @@ Vagrant.configure("2") do |config|
     config.vm.hostname = "mailerlite-test"
     config.vm.box = "vanegmondgroep/server"
   	
+    config.vm.provision "docker" do |docker|
+        docker.build_image "/vagrant", 
+            args: "-t freegeoip"
+        docker.run "freegeoip", 
+            args: "-v /vagrant/database:/database"
+    end
 
     config.vm.provision "ansible" do |ansible|
         ansible.playbook = "playbook.yml"

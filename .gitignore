@@ -10,3 +10,4 @@
 .vagrant/machines/default/virtualbox/vagrant_cwd
 .vagrant/rgloader/loader.rb
 python/.DS_Store
+.DS_Store
